@@ -6,7 +6,6 @@
 // Se il numero è presente nella lista dei numeri generati, la partita termina, altrimenti si continua chiedendo all'utente un altro numero.
 // La partita termina quando il giocatore inserisce un numero "vietato" o raggiunge il numero massimo possibile di numeri consentiti.
 // Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l'utente ha inserito un numero consentito.
-//COSA VOGLIO FARE?
 //costanti
 var MAX_NUM = 100;
 var MIN_NUM = 1;
@@ -34,7 +33,7 @@ while (mine.length < NUM_MINE){
     mine.push(randomNumbers);
   }
 }
-//creo array che contiene le sclete dell'utente
+//creo array che contiene le scelte dell'utente
 var userChoices = [];
 //vincere o perdere
 var win = false;

@@ -11,6 +11,17 @@ var MAX_NUM = 100;
 var MIN_NUM = 1;
 var NUM_MINE = 16;
 var ROUND = 84;
+var level = prompt("Scegli il livello, tra 0, 1 e 2");
+switch (level) {
+  case 0:
+  MAX_NUM = 100;
+    break;
+    case 1:
+    MAX_NUM = 80;
+      break;
+  case 2:
+  MAX_NUM = 50;
+}
 //creo array che contiene i 16 numeri
 var mine = [];
 //funzione che mi dice se i numeri si trovano dentro a un array
@@ -19,7 +30,6 @@ function isInArray(num, arrNum){
     if (num == arrNum[i]){
       return true;
     }
-
   }
   return false;
 }
@@ -53,3 +63,4 @@ while (!win && isAlive){
   }
 userChoices.push(numUtente);
 }
+document.getElementById("result").innerHTML += userChoices.length;
